@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{subject}</title>
+    <style>
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+    
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+
+        .header {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        .content {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-details {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-details strong {
+            width: 150px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+      
+        .message {
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+
+      
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: #007bff;">{subject}</h1>
+        </div>
+        <div class="content">
+            <div class="product-details">
+                {product_label}: {product_name} (ID: {id_product})<br>
+                {parent_categories_label} {parent_categories}
+            </div>
+            <div class="message">
+                <p>{dear_admin}</p>
+                <p>{changes_made}</p>
+                <p>{review_details}</p>
+                <p>{thank_you}</p>
+            </div>
+        </div>
+        <div class="footer">
+            {email_sent_by_module}
+        </div>
+    </div>
+</body>
+</html>

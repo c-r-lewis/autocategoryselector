@@ -1,0 +1,15 @@
+{subject}
+
+{product_label}: {product_name} (ID: {id_product})
+
+{parent_categories_label} {parent_categories}
+
+{dear_admin}
+
+{changes_made}
+
+{review_details}
+
+{thank_you}
+
+{email_sent_by_module}
